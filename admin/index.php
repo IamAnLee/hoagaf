@@ -81,17 +81,21 @@
 					<?php 
 						$count = $product->get_all_product();
 
-						if ($count){
+						if ($count && $count>0){
 							$i = 0;
 							while($result = $count->fetch_assoc()){
 								$i++;
 							}
-					?>
-					<div class="col-md-8 market-update-left">
-						<h4>Số sản phẩm</h4>
-						<h3><?php echo $i; ?></h3>
-					</div>
-					<?php
+							echo'
+							<div class="col-md-8 market-update-left">
+							<h4>Số sản phẩm</h4>
+							<h3><?php echo $i; ?></h3>
+							</div>';
+						}else{
+							echo'
+							<div class="col-md-8 market-update-left">
+							<h4>Chưa có sản phẩm</h4>	
+							</div>';
 						}
 					?>
 				  <div class="clearfix"> </div>
