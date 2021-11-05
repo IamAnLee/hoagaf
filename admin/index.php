@@ -94,7 +94,7 @@
 						}else{
 							echo'
 							<div class="col-md-8 market-update-left">
-							<h4>Chưa có sản phẩm</h4>	
+							<h3>Chưa có sản phẩm</h3>	
 							</div>';
 						}
 					?>
